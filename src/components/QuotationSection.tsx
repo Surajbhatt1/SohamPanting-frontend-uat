@@ -103,6 +103,7 @@ export const QuotationSection: React.FC = () => {
     console.log('API Response:', data);
 
     setIsSubmitted(true);
+
   } catch (error) {
     console.error('Submit Error:', error);
 
@@ -115,6 +116,7 @@ export const QuotationSection: React.FC = () => {
     } else {
       setErrorMessage('Something went wrong. Please try again.');
     }
+
   } finally {
     setIsSubmitting(false);
   }
