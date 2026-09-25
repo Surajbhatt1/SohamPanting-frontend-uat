@@ -81,24 +81,26 @@ export const QuotationSection: React.FC = () => {
   setErrorMessage('');
 
   try {
-    const response = await fetch(
-      `${import.meta.env.VITE_API_URL}/api/contact`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      }
-    );
+  const response = await fetch(
+  `${import.meta.env.VITE_API_URL}/api/contact`,
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+  }
+);
 
-    const data = await response.json();
+const data = await response.json();
 
-    if (!response.ok) {
-      throw new Error(
-        data?.message || 'Failed to submit quotation request'
-      );
-    }
+if (!response.ok) {
+  throw new Error(data.message || "Something went wrong");
+}
+
+if (data.success) {
+  alert("Quotation submitted successfully!");
+}
 
     console.log('API Response:', data);
 
