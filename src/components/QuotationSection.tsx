@@ -127,6 +127,11 @@ export const QuotationSection: React.FC = () => {
 
 const API_URL = import.meta.env.VITE_API_URL;
 
+console.log("========== API DEBUG ==========");
+console.log("API_URL:", API_URL);
+console.log("ENV:", import.meta.env);
+console.log("===============================");
+
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
