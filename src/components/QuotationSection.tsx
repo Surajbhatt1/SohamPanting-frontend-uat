@@ -74,55 +74,112 @@ export const QuotationSection: React.FC = () => {
 
 
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+//   e.preventDefault();
+
+//   setIsSubmitting(true);
+//   setErrorMessage('');
+
+//   try {
+//   const response = await fetch(
+//   `${import.meta.env.VITE_API_URL}/api/contact`,
+//   {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(formData),
+//   }
+// );
+
+// const data = await response.json();
+
+// if (!response.ok) {
+//   throw new Error(data.message || "Something went wrong");
+// }
+
+// if (data.success) {
+//   alert("Quotation submitted successfully!");
+// }
+
+//     console.log('API Response:', data);
+
+//     setIsSubmitted(true);
+
+//   } catch (error) {
+//     console.error('Submit Error:', error);
+
+//     if (error instanceof TypeError) {
+//       setErrorMessage(
+//         'Unable to connect to the server. Please try again later.'
+//       );
+//     } else if (error instanceof Error) {
+//       setErrorMessage(error.message);
+//     } else {
+//       setErrorMessage('Something went wrong. Please try again.');
+//     }
+
+//   } finally {
+//     setIsSubmitting(false);
+//   }
+// };
+
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
   setIsSubmitting(true);
-  setErrorMessage('');
+  setErrorMessage("");
 
   try {
-  const response = await fetch(
-  `${import.meta.env.VITE_API_URL}/api/contact`,
-  {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  }
-);
+    console.log("API URL:", API_URL);
 
-const data = await response.json();
+    if (!API_URL) {
+      throw new Error("API URL is not configured.");
+    }
 
-if (!response.ok) {
-  throw new Error(data.message || "Something went wrong");
-}
+    const response = await fetch(`${API_URL}/api/contact`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-if (data.success) {
-  alert("Quotation submitted successfully!");
-}
+    const data = await response.json();
 
-    console.log('API Response:', data);
+    console.log("API Response:", data);
 
-    setIsSubmitted(true);
+    if (!response.ok) {
+      throw new Error(data.message || "Something went wrong");
+    }
+
+    if (data.success) {
+      alert("Quotation submitted successfully!");
+      setIsSubmitted(true);
+    }
 
   } catch (error) {
-    console.error('Submit Error:', error);
+    console.error("Submit Error:", error);
 
     if (error instanceof TypeError) {
       setErrorMessage(
-        'Unable to connect to the server. Please try again later.'
+        "Unable to connect to the server. Please try again later."
       );
     } else if (error instanceof Error) {
       setErrorMessage(error.message);
     } else {
-      setErrorMessage('Something went wrong. Please try again.');
+      setErrorMessage("Something went wrong. Please try again.");
     }
 
   } finally {
     setIsSubmitting(false);
   }
 };
+
+
 
   const handleReset = () => {
     setFormData({
