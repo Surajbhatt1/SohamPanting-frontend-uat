@@ -65,58 +65,127 @@ export const SERVICES_DATA: ServiceItem[] = [
   }
 ];
 
-export const PROJECTS_DATA: ProjectItem[] = [
-  {
-    id: 'proj-1',
-    tag: 'Residential Painting',
-    location: 'Kharadi, Pune',
-    title: '3 BHK Luxury Villa Repainting',
-    description: 'Complete Asian Paints Royale Luxury interior emulsion with velvet accent walls and wooden polish.',
-    imageUrl: projVillaImg
-  },
-  {
-    id: 'proj-2',
-    tag: 'Interior Painting',
-    location: 'Magarpatta City, Pune',
-    title: 'Modern Minimalist Living Room',
-    description: 'Neutral warm grey scheme, seamless false ceiling putty work, and smudge-resistant washable walls.',
-    imageUrl: projLivingImg
-  },
-  {
-    id: 'proj-3',
-    tag: 'Exterior Painting',
-    location: 'Baner, Pune',
-    title: 'Bungalow Weather-Shield Makeover',
-    description: 'Apex Ultima weatherproof coating with anti-algae treatment and parapet crack repair.',
-    imageUrl: projBungalowImg
-  },
-  {
-    id: 'proj-4',
-    tag: 'Office Painting',
-    location: 'Viman Nagar, Pune',
-    title: 'Tech Workspace Corporate Painting',
-    description: 'Low-VOC acoustic coating executed over a single weekend with zero office operational disruption.',
-    imageUrl: projOfficeImg
-  },
-  {
-    id: 'proj-5',
-    tag: 'Texture Painting',
-    location: 'Hadapsar, Pune',
-    title: 'Designer Metallic Feature Wall',
-    description: 'Custom Royale Play metallic safari texture with spotlight enhancement for master bedroom.',
-    imageUrl: projTextureImg
-  },
-  {
-    id: 'proj-6',
-    tag: 'Commercial Projects',
-    location: 'Mundhwa, Pune',
-    title: 'Commercial Retail Showroom',
-    description: 'High-durability polyurethane wall enamels and architectural false ceiling high-contrast finishes.',
-    imageUrl: projCommercialImg
-  }
+// export const PROJECTS_DATA: ProjectItem[] = [
+//   {
+//     id: 'proj-1',
+//     tag: 'Residential Painting',
+//     location: 'Kharadi, Pune',
+//     title: '3 BHK Luxury Villa Repainting',
+//     description: 'Complete Asian Paints Royale Luxury interior emulsion with velvet accent walls and wooden polish.',
+//     imageUrl: projVillaImg
+//   },
+//   {
+//     id: 'proj-2',
+//     tag: 'Interior Painting',
+//     location: 'Magarpatta City, Pune',
+//     title: 'Modern Minimalist Living Room',
+//     description: 'Neutral warm grey scheme, seamless false ceiling putty work, and smudge-resistant washable walls.',
+//     imageUrl: projLivingImg
+//   },
+//   {
+//     id: 'proj-3',
+//     tag: 'Exterior Painting',
+//     location: 'Baner, Pune',
+//     title: 'Bungalow Weather-Shield Makeover',
+//     description: 'Apex Ultima weatherproof coating with anti-algae treatment and parapet crack repair.',
+//     imageUrl: projBungalowImg
+//   },
+//   {
+//     id: 'proj-4',
+//     tag: 'Office Painting',
+//     location: 'Viman Nagar, Pune',
+//     title: 'Tech Workspace Corporate Painting',
+//     description: 'Low-VOC acoustic coating executed over a single weekend with zero office operational disruption.',
+//     imageUrl: projOfficeImg
+//   },
+//   {
+//     id: 'proj-5',
+//     tag: 'Texture Painting',
+//     location: 'Hadapsar, Pune',
+//     title: 'Designer Metallic Feature Wall',
+//     description: 'Custom Royale Play metallic safari texture with spotlight enhancement for master bedroom.',
+//     imageUrl: projTextureImg
+//   },
+//   {
+//     id: 'proj-6',
+//     tag: 'Commercial Projects',
+//     location: 'Mundhwa, Pune',
+//     title: 'Commercial Retail Showroom',
+//     description: 'High-durability polyurethane wall enamels and architectural false ceiling high-contrast finishes.',
+//     imageUrl: projCommercialImg
+//   }
 
 
   
+// ];
+
+
+export const PROJECTS_DATA: ProjectItem[] = [
+  {
+    id: 'proj-1',
+    category: 'Flats',
+    tag: 'Residential Painting',
+    location: 'Kharadi, Pune',
+    title: '3 BHK Luxury Villa Repainting',
+    description:
+      'Complete Asian Paints Royale Luxury interior emulsion with velvet accent walls and wooden polish.',
+    imageUrl: projVillaImg,
+  },
+
+  {
+    id: 'proj-2',
+    category: 'Flats',
+    tag: 'Interior Painting',
+    location: 'Magarpatta City, Pune',
+    title: 'Modern Minimalist Living Room',
+    description:
+      'Neutral warm grey scheme, seamless false ceiling putty work, and smudge-resistant washable walls.',
+    imageUrl: projLivingImg,
+  },
+
+  {
+    id: 'proj-3',
+    category: 'Bungalow',
+    tag: 'Exterior Painting',
+    location: 'Baner, Pune',
+    title: 'Bungalow Weather-Shield Makeover',
+    description:
+      'Apex Ultima weatherproof coating with anti-algae treatment and parapet crack repair.',
+    imageUrl: projBungalowImg,
+  },
+
+  {
+    id: 'proj-4',
+    category: 'Commercial',
+    tag: 'Office Painting',
+    location: 'Viman Nagar, Pune',
+    title: 'Tech Workspace Corporate Painting',
+    description:
+      'Low-VOC acoustic coating executed over a single weekend with zero office operational disruption.',
+    imageUrl: projOfficeImg,
+  },
+
+  {
+    id: 'proj-5',
+    category: 'Flats',
+    tag: 'Texture Painting',
+    location: 'Hadapsar, Pune',
+    title: 'Designer Metallic Feature Wall',
+    description:
+      'Custom Royale Play metallic safari texture with spotlight enhancement for master bedroom.',
+    imageUrl: projTextureImg,
+  },
+
+  {
+    id: 'proj-6',
+    category: 'Commercial',
+    tag: 'Commercial Projects',
+    location: 'Mundhwa, Pune',
+    title: 'Commercial Retail Showroom',
+    description:
+      'High-durability polyurethane wall enamels and architectural false ceiling high-contrast finishes.',
+    imageUrl: projCommercialImg,
+  },
 ];
 
 export const WORKFLOW_STEPS: StepItem[] = [

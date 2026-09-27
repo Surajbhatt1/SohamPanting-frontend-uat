@@ -6,8 +6,19 @@ export interface ServiceItem {
   actionText: string;
 }
 
+// export interface ProjectItem {
+//   id: string;
+//   tag: string;
+//   location: string;
+//   title: string;
+//   description: string;
+//   imageUrl: string;
+// }
+
+
 export interface ProjectItem {
   id: string;
+  category: 'Commercial' | 'Bungalow' | 'Flats';
   tag: string;
   location: string;
   title: string;
