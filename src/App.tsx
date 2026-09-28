@@ -6,7 +6,7 @@ import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
 import { AboutSection } from './components/AboutSection';
 import { ProcessSection } from './components/ProcessSection';
-import { ProjectsSection } from './components/ProjectsSection';
+// import { ProjectsSection } from './components/ProjectsSection';
 import { ReviewsSection } from './components/ReviewsSection';
 import { QuotationSection } from './components/QuotationSection';
 import { Footer } from './components/Footer';
@@ -36,7 +36,7 @@ export default function App() {
         <ServicesSection />
         <AboutSection />
         <ProcessSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <ReviewsSection />
         <QuotationSection />
       </main>

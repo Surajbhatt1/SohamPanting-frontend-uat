@@ -23,7 +23,7 @@ export const TopBar: React.FC = () => {
           <span className="text-white/80 text-[11px] hidden lg:inline">Connect with us:</span>
           <a
             className="w-6 h-6 rounded-full bg-white/20 hover:bg-white hover:text-brand-orange flex items-center justify-center transition-all duration-200"
-            href="https://facebook.com"
+            href="https://www.facebook.com/sohampaintingservies?mibextid=ZbWKwL"
             rel="noopener noreferrer"
             target="_blank"
             title="Facebook"
@@ -33,7 +33,7 @@ export const TopBar: React.FC = () => {
           </a>
           <a
             className="w-6 h-6 rounded-full bg-white/20 hover:bg-white hover:text-brand-orange flex items-center justify-center transition-all duration-200"
-            href="https://instagram.com"
+            href="https://www.instagram.com/soham_painting_services?utm_source=qr&stkn=MWRsOXJkMnhhemMwMA%3D%3D"
             rel="noopener noreferrer"
             target="_blank"
             title="Instagram"

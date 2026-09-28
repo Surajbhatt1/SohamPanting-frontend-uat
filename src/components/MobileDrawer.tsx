@@ -109,16 +109,15 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({ isOpen, onClose }) =
             </span>
             <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
           </a>
-          <a
+          {/* <a
             className="drawer-link flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-slate-800 hover:bg-orange-50 hover:text-brand-orange transition-colors"
             href="#projects"
-            onClick={onClose}
-          >
+            onClick={onClose} >
             <span className="flex items-center gap-3">
               <i className="fa-solid fa-images text-slate-400 text-sm"></i> Project Gallery
             </span>
             <i className="fa-solid fa-chevron-right text-xs text-slate-300"></i>
-          </a>
+          </a> */}
           <a
             className="drawer-link flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-slate-800 hover:bg-orange-50 hover:text-brand-orange transition-colors"
             href="#reviews"

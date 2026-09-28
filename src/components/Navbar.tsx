@@ -38,9 +38,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMobileMenu }) => {
             <a className="hover:text-brand-orange transition-colors py-2" href="#process">
               How We Work
             </a>
-            <a className="hover:text-brand-orange transition-colors py-2" href="#projects">
+            {/* <a className="hover:text-brand-orange transition-colors py-2" href="#projects">
               Projects
-            </a>
+            </a> */}
             <a className="hover:text-brand-orange transition-colors py-2" href="#reviews">
               Testimonials
             </a>

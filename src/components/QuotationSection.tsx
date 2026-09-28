@@ -645,7 +645,7 @@ const handleSubmit = async (
                         htmlFor="form-location"
                         className="block text-xs font-bold text-slate-700 mb-1"
                       >
-                        Location / Area in Pune *
+                        Location *
                       </label>
 
                       <input
@@ -703,6 +703,10 @@ const handleSubmit = async (
 
                         <option value="ExteriorOnly">
                           Exterior Building
+                        </option>
+
+                        <option value="Other">
+                          Other
                         </option>
                       </select>
                     </div>
@@ -775,8 +779,12 @@ const handleSubmit = async (
                           Wooden Polish
                         </option>
 
-                        <option value="Complete">
+                        <option value="Complete Home Makeover">
                           Complete Home Makeover
+                        </option>
+
+                        <option value="Other">
+                          Other
                         </option>
                       </select>
                     </div>

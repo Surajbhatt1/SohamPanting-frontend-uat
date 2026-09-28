@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
             <div className="pt-2 flex items-center gap-3">
               <a
                 className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-brand-orange hover:text-white flex items-center justify-center text-slate-300 transition-colors"
-                href="https://facebook.com"
+                href="https://www.facebook.com/sohampaintingservies?mibextid=ZbWKwL"
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Facebook"
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
               </a>
               <a
                 className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-brand-orange hover:text-white flex items-center justify-center text-slate-300 transition-colors"
-                href="https://instagram.com"
+                href="https://www.instagram.com/soham_painting_services?utm_source=qr&stkn=MWRsOXJkMnhhemMwMA%3D%3D"
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Instagram"
