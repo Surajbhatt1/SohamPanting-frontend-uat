@@ -185,6 +185,87 @@ console.log("===============================");
 // };
 
 
+// const handleSubmit = async (
+//   e: React.FormEvent<HTMLFormElement>
+// ) => {
+//   e.preventDefault();
+
+//   setIsSubmitting(true);
+//   setErrorMessage("");
+
+//   try {
+//     // Backend API URL
+//     const API_URL =
+//       "https://soham-panting-backend-uat.vercel.app";
+
+//     console.log("API URL:", API_URL);
+//     console.log("Form Data:", formData);
+
+//     // Send quotation form data to backend
+//     const response = await fetch(
+//       `${API_URL}/api/contact`,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       }
+//     );
+
+//     // Get API response
+//     const data = await response.json();
+
+//     console.log("API Response:", data);
+//     console.log("Response Status:", response.status);
+
+//     // Check API response
+//     if (!response.ok) {
+//       throw new Error(
+//         data.message ||
+//           "Something went wrong while submitting the form."
+//       );
+//     }
+
+//     // Handle successful submission
+//     if (data.success) {
+//       alert("Quotation submitted successfully!");
+
+//       setIsSubmitted(true);
+
+//       // Reset form
+//       setFormData({
+//         name: "",
+//         mobile: "",
+//         location: "",
+//         propertyType: "",
+//         area: "",
+//         service: "",
+//         requirements: "",
+//       });
+//     } else {
+//       throw new Error(
+//         data.message || "Unable to submit quotation."
+//       );
+//     }
+//   } catch (error) {
+//     console.error("Submit Error:", error);
+
+//     if (error instanceof TypeError) {
+//       setErrorMessage(
+//         "Unable to connect to the server. Please try again later."
+//       );
+//     } else if (error instanceof Error) {
+//       setErrorMessage(error.message);
+//     } else {
+//       setErrorMessage(
+//         "Something went wrong. Please try again."
+//       );
+//     }
+//   } finally {
+//     setIsSubmitting(false);
+//   }
+// };
 const handleSubmit = async (
   e: React.FormEvent<HTMLFormElement>
 ) => {
@@ -193,15 +274,47 @@ const handleSubmit = async (
   setIsSubmitting(true);
   setErrorMessage("");
 
-  try {
-    // Backend API URL
-    const API_URL =
-      "https://soham-panting-backend-uat.vercel.app";
+  const API_URL =
+    "https://soham-panting-backend-uat.vercel.app";
 
-    console.log("API URL:", API_URL);
+  try {
+    // ==========================================
+    // STEP 1: Check Backend Health
+    // ==========================================
+    console.log("Checking backend health...");
+
+    const healthResponse = await fetch(
+      `${API_URL}/api/health`,
+      {
+        method: "GET",
+      }
+    );
+
+    console.log(
+      "Health Response Status:",
+      healthResponse.status
+    );
+
+    // Check health API status
+    if (!healthResponse.ok) {
+      throw new Error(
+        "Server is currently unavailable. Please try again later."
+      );
+    }
+
+    const healthData = await healthResponse.json();
+
+    console.log("Health Response:", healthData);
+
+    // ==========================================
+    // STEP 2: Submit Contact Form
+    // ==========================================
+    console.log(
+      "Backend is healthy. Submitting contact form..."
+    );
+
     console.log("Form Data:", formData);
 
-    // Send quotation form data to backend
     const response = await fetch(
       `${API_URL}/api/contact`,
       {
@@ -213,13 +326,18 @@ const handleSubmit = async (
       }
     );
 
-    // Get API response
+    // Get contact API response
     const data = await response.json();
 
-    console.log("API Response:", data);
-    console.log("Response Status:", response.status);
+    console.log("Contact API Response:", data);
+    console.log(
+      "Contact Response Status:",
+      response.status
+    );
 
-    // Check API response
+    // ==========================================
+    // STEP 3: Check Contact API Response
+    // ==========================================
     if (!response.ok) {
       throw new Error(
         data.message ||
@@ -227,7 +345,9 @@ const handleSubmit = async (
       );
     }
 
-    // Handle successful submission
+    // ==========================================
+    // STEP 4: Handle Successful Submission
+    // ==========================================
     if (data.success) {
       alert("Quotation submitted successfully!");
 
@@ -251,6 +371,9 @@ const handleSubmit = async (
   } catch (error) {
     console.error("Submit Error:", error);
 
+    // ==========================================
+    // Handle Errors
+    // ==========================================
     if (error instanceof TypeError) {
       setErrorMessage(
         "Unable to connect to the server. Please try again later."
