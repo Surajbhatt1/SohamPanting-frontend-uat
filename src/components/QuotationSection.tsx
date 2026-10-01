@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { QuoteFormData } from '../types';
+import Swal from "sweetalert2";
 
 export const QuotationSection: React.FC = () => {
   const [formData, setFormData] = useState<QuoteFormData>({
@@ -349,7 +350,14 @@ const handleSubmit = async (
     // STEP 4: Handle Successful Submission
     // ==========================================
     if (data.success) {
-      alert("Quotation submitted successfully!");
+      // alert("Quotation submitted successfully!");
+
+       Swal.fire({
+    icon: "success",
+    title: "Thank You! 🎉",
+    text: "Your quotation request has been submitted successfully. Our team will contact you shortly.",
+    confirmButtonText: "Okay",
+  });
 
       setIsSubmitted(true);
 
