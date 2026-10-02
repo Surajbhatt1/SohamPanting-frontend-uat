@@ -141,7 +141,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <h4 className="text-white font-bold text-sm tracking-wide">Contact Us</h4>
             <ul className="space-y-2.5">
-              <li className="flex items-start gap-2.5">
+              {/* <li className="flex items-start gap-2.5">
                 <i className="fa-solid fa-phone text-brand-orange mt-0.5"></i>
                 <a className="hover:text-white font-bold text-white transition-colors" href="tel:8793600635">
                   +91 87936 00635
@@ -155,7 +155,22 @@ export const Footer: React.FC = () => {
                     >
                       +91 9096781944
                     </a>
-                  </li>
+                  </li> */}
+
+
+                  <li className="flex items-center gap-2.5">
+  <i className="fa-solid fa-phone text-brand-orange"></i>
+  <a href="tel:8793600635" className="font-bold text-white hover:text-brand-orange">
+    Pune: +91 87936 00635
+  </a>
+</li>
+
+<li className="flex items-center gap-2.5">
+  <i className="fa-solid fa-phone text-brand-orange"></i>
+  <a href="tel:9096781944" className="font-bold text-white hover:text-brand-orange">
+    Solapur: +91 90967 81944
+  </a>
+</li>
 
               <li className="flex items-start gap-2.5">
                 <i className="fa-brands fa-whatsapp text-emerald-500 mt-0.5 text-sm"></i>
