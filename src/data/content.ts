@@ -315,38 +315,38 @@ bgColor: 'bg-sky-50',
     ]
   },
 
-     {
-    id: 'waterproofing',
-      bgColor: 'bg-blue-50',
+  //    {
+  //   id: 'waterproofing',
+  //     bgColor: 'bg-blue-50',
 
-    icon: 'fa-solid fa-droplet-slash',
-    title: 'Waterproofing',
-    description:
-      'Professional waterproofing solutions for terraces, bathrooms, walls and seepage problems.',
-    actionText: 'Seepage Free Warranty',
+  //   icon: 'fa-solid fa-droplet-slash',
+  //   title: 'Waterproofing',
+  //   description:
+  //     'Professional waterproofing solutions for terraces, bathrooms, walls and seepage problems.',
+  //   actionText: 'Seepage Free Warranty',
 
-    image: 'https://www.deccanclap.com/uploads/services/waterproofing-services.jpg',
+  //   image: 'https://www.deccanclap.com/uploads/services/waterproofing-services.jpg',
 
-    detailedDescription:
-      'Our waterproofing service helps protect your property from water leakage, seepage and moisture-related damage. We inspect the affected area, identify the source of water penetration and recommend the appropriate waterproofing treatment.',
+  //   detailedDescription:
+  //     'Our waterproofing service helps protect your property from water leakage, seepage and moisture-related damage. We inspect the affected area, identify the source of water penetration and recommend the appropriate waterproofing treatment.',
 
-    benefits: [
-      'Terrace waterproofing',
-      'Bathroom waterproofing',
-      'Wall seepage treatment',
-      'Crack treatment',
-      'Moisture protection',
-      'Professional application'
-    ],
+  //   benefits: [
+  //     'Terrace waterproofing',
+  //     'Bathroom waterproofing',
+  //     'Wall seepage treatment',
+  //     'Crack treatment',
+  //     'Moisture protection',
+  //     'Professional application'
+  //   ],
 
-    areas: [
-      'Pune',
-      'Kharadi',
-      'Hadapsar',
-      'Mundhwa',
-      'Viman Nagar'
-    ]
-  },
+  //   areas: [
+  //     'Pune',
+  //     'Kharadi',
+  //     'Hadapsar',
+  //     'Mundhwa',
+  //     'Viman Nagar'
+  //   ]
+  // },
 
 
 {
@@ -382,39 +382,39 @@ bgColor: 'bg-sky-50',
     'Solapur'
   ]
 },
-// {
-//   id: 'putty-primer',
-//   icon: 'fa-solid fa-trowel',
-//   title: 'Wall Putty & Primer',
+{
+  id: 'putty-primer',
+  icon: 'fa-solid fa-trowel',
+  title: 'Wall Putty & Primer',
 
-//   description:
-//     'Professional wall putty and primer application to create a smooth, even surface and improve paint adhesion and durability.',
+  description:
+    'Professional wall putty and primer application to create a smooth, even surface and improve paint adhesion and durability.',
 
-//   actionText: 'Ultra-smooth Base',
+  actionText: 'Ultra-smooth Base',
 
-//   image: '/images/services/wall-putty-primer.jpg',
+  image: 'https://www.studiomatrx.org/wall-finishes/wall-primer-and-putty-india/hero.jpg',
 
-//   detailedDescription:
-//     'Our wall putty and primer service prepares your walls for a smooth and long-lasting paint finish. We apply quality wall putty to correct minor surface imperfections and use suitable primer to improve paint adhesion, coverage and overall durability.',
+  detailedDescription:
+    'Our wall putty and primer service prepares your walls for a smooth and long-lasting paint finish. We apply quality wall putty to correct minor surface imperfections and use suitable primer to improve paint adhesion, coverage and overall durability.',
 
-//   benefits: [
-//     'Wall surface leveling',
-//     'Minor crack and unevenness correction',
-//     'Smooth wall preparation',
-//     'Quality primer application',
-//     'Improved paint adhesion',
-//     'Better paint durability'
-//   ],
+  benefits: [
+    'Wall surface leveling',
+    'Minor crack and unevenness correction',
+    'Smooth wall preparation',
+    'Quality primer application',
+    'Improved paint adhesion',
+    'Better paint durability'
+  ],
 
-//   areas: [
-//     'Pune',
-//     'Kharadi',
-//     'Hadapsar',
-//     'Mundhwa',
-//     'Viman Nagar',
-//     'Solapur'
-//   ]
-// },
+  areas: [
+    'Pune',
+    'Kharadi',
+    'Hadapsar',
+    'Mundhwa',
+    'Viman Nagar',
+    'Solapur'
+  ]
+},
 
 
 
@@ -574,7 +574,7 @@ export const REVIEWS_DATA: ReviewItem[] = [
 
 export const STATS_DATA: StatItem[] = [
   {
-    number: '5+',
+    number: '10+',
     label: 'Years of Experience',
     sublabel: 'Continuous excellence'
   },

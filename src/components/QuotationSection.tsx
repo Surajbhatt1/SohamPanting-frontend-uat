@@ -453,7 +453,7 @@ const handleSubmit = async (
 
                 <div>
                   <p className="text-[11px] text-slate-400">
-                    Direct Helpline
+                    Pune Helpline
                   </p>
 
                   <p className="text-sm font-bold text-white">
@@ -461,6 +461,26 @@ const handleSubmit = async (
                   </p>
                 </div>
               </a>
+
+              {/* SOLAPUR HELPLINE */}
+<a
+  className="flex items-center gap-4 p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 hover:border-brand-orange transition-colors"
+  href="tel:YOUR_SOLAPUR_NUMBER"
+>
+  <div className="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center">
+    <i className="fa-solid fa-phone text-lg"></i>
+  </div>
+
+  <div>
+    <p className="text-[11px] text-slate-400">
+      Solapur Helpline
+    </p>
+
+    <p className="text-sm font-bold text-white">
+      +91 9096781944
+    </p>
+  </div>
+</a>
 
               {/* WHATSAPP */}
               <a
@@ -498,6 +518,25 @@ const handleSubmit = async (
 
                   <p className="text-sm font-bold text-white">
                     Mundhwa - Kharadi Rd, Pune, Maharashtra 411036
+                  </p>
+                </div>
+
+              </div>
+
+
+               <div className="flex items-center gap-4 p-3.5 rounded-xl bg-slate-800/80 border border-slate-700">
+
+                <div className="w-10 h-10 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center">
+                  <i className="fa-solid fa-location-dot text-lg"></i>
+                </div>
+
+                <div>
+                  <p className="text-[11px] text-slate-400">
+                    Operational Base
+                  </p>
+
+                  <p className="text-sm font-bold text-white">
+                    Ambedkar chowk,  Near New RTO OFFICE vijapur road , Solapur Maharashtra 413004
                   </p>
                 </div>
 

@@ -147,6 +147,16 @@ export const Footer: React.FC = () => {
                   +91 87936 00635
                 </a>
               </li>
+                  <li className="flex items-start gap-2.5">
+                    <i className="fa-solid fa-phone text-brand-orange mt-0.5"></i>
+                    <a
+                      className="hover:text-white font-bold text-white transition-colors"
+                      href="tel:9096781944"
+                    >
+                      +91 9096781944
+                    </a>
+                  </li>
+
               <li className="flex items-start gap-2.5">
                 <i className="fa-brands fa-whatsapp text-emerald-500 mt-0.5 text-sm"></i>
                 <span>+91 87936 00635 (WhatsApp)</span>
@@ -159,6 +169,11 @@ export const Footer: React.FC = () => {
               <li className="flex items-start gap-2.5">
                 <i className="fa-solid fa-location-dot text-brand-orange mt-0.5"></i>
                 <span>Mundhwa - Kharadi Rd, Pune, Maharashtra 411036</span>
+              </li>
+
+               <li className="flex items-start gap-2.5">
+                <i className="fa-solid fa-location-dot text-brand-orange mt-0.5"></i>
+                <span>Ambedkar chowk,  Near New RTO OFFICE vijapur road , Solapur Maharashtra 413004</span>
               </li>
             </ul>
           </div>

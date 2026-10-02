@@ -40,7 +40,7 @@ export const AboutSection: React.FC = () => {
                 <i className="fa-solid fa-trophy"></i>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl font-black text-slate-900 leading-none">12+ Years</p>
+                <p className="text-xl sm:text-2xl font-black text-slate-900 leading-none">10+ Years</p>
                 <p className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-1">Excellence in Pune</p>
               </div>
             </div>
