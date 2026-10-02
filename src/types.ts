@@ -1,10 +1,29 @@
+// export interface ServiceItem {
+//   id: string;
+//   icon: string;
+//   title: string;
+//   description: string;
+//   actionText: string;
+// }
+
+// Image and module window form
 export interface ServiceItem {
   id: string;
   icon: string;
   title: string;
   description: string;
   actionText: string;
+  image: string;
+  detailedDescription: string;
+  benefits: string[];
+  areas?: string[];
+  bgColor?: string;
 }
+
+
+
+
+
 
 // export interface ProjectItem {
 //   id: string;

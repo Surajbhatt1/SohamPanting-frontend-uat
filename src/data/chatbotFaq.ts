@@ -34,7 +34,81 @@ export const QUICK_QUESTIONS: QuickFaq[] = [
     question: 'How can I contact you?',
     answer: 'You can call us at +91 87936 00635 or contact us on WhatsApp for your painting requirements.',
     keywords: ['contact', 'call', 'phone', 'whatsapp', 'reach', 'number', 'mobile', 'talk', 'address', 'email']
-  }
+  },
+
+{
+    question: 'Which paint brands do you use?',
+    answer:
+      'We primarily work with Asian Paints products.',
+    keywords: [
+      'paint brand',
+      'paint brands',
+      'brand',
+      'brands',
+      'asian paints',
+      'asian paint',
+      'which paint',
+      'paint company',
+      'product',
+      'products',
+    ],
+  },
+
+  {
+    question: 'Do you provide a site visit?',
+    answer:
+      'Yes. We can arrange a site visit to understand the work and provide an appropriate estimate.',
+    keywords: [
+      'site visit',
+      'site inspection',
+      'visit',
+      'inspection',
+      'property visit',
+      'home visit',
+      'house visit',
+      'come to site',
+      'visit my home',
+    ],
+  },
+
+  {
+    question: 'What is the starting price for interior painting?',
+    answer:
+      'Our interior painting starts from approximately ₹7,000 for a 1 BHK. The final price depends on the area, surface condition, paint type, and required work.',
+    keywords: [
+      'interior price',
+      'interior painting price',
+      'interior painting cost',
+      'interior cost',
+      'starting price interior',
+      'starting price',
+      '1 bhk',
+      'one bhk',
+      'interior rate',
+      'interior charges',
+      'interior budget',
+      'how much interior painting',
+    ],
+  },
+
+  {
+    question: 'What is the starting price for exterior painting?',
+    answer:
+      'Exterior painting starts from approximately ₹20,000 onwards. We provide the final estimate after understanding the site requirements.',
+    keywords: [
+      'exterior price',
+      'exterior painting price',
+      'exterior painting cost',
+      'exterior cost',
+      'starting price exterior',
+      'exterior rate',
+      'exterior charges',
+      'exterior budget',
+      'how much exterior painting',
+    ],
+  },
+
+
 ];
 
 export const INITIAL_BOT_MESSAGE = `Hi! 👋 Welcome to Soham Painting Services.\nHow can I help you today?`;

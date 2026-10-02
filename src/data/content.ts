@@ -6,64 +6,64 @@ import projOfficeImg from '../assets/images/proj_office_interior_1789142569691.j
 import projTextureImg from '../assets/images/proj_texture_wall_1789142582794.jpg';
 import projCommercialImg from '../assets/images/proj_commercial_bldg_1789142597618.jpg';
 
-export const SERVICES_DATA: ServiceItem[] = [
-  {
-    id: 'interior',
-    icon: 'fa-solid fa-brush',
-    title: 'Interior Painting',
-    description: 'Royale luxury emulsions, velvet touches, and stain-resistant finishes with complete floor masking and post-cleaning.',
-    actionText: 'Free Color Consultation'
-  },
-  {
-    id: 'exterior',
-    icon: 'fa-solid fa-house-chimney-window',
-    title: 'Exterior Painting',
-    description: 'Weather-shield coatings, anti-fungal silicon primers, and dust-resistant wall paints providing 5-10 year UV protection.',
-    actionText: 'Monsoon Protection'
-  },
-  {
-    id: 'waterproofing',
-    icon: 'fa-solid fa-droplet-slash',
-    title: 'Waterproofing',
-    description: 'Comprehensive terrace, bathroom, seepage, and parapet wall waterproofing using Dr. Fixit & SmartCare polymer systems.',
-    actionText: 'Seepage Free Warranty'
-  },
-  {
-    id: 'false-ceiling',
-    icon: 'fa-solid fa-border-top-left',
-    title: 'False Ceiling Painting',
-    description: 'Joint taping, gypsum putty leveling, and ultra-matte ceiling paints that eliminate harsh glare and highlight cove lighting.',
-    actionText: 'Seamless Finish'
-  },
-  {
-    id: 'texture',
-    icon: 'fa-solid fa-layer-group',
-    title: 'Texture Painting',
-    description: 'Custom metallic stencils, rustic stucco, combed effects, marble finish, and feature wall designs curated for living spaces.',
-    actionText: 'Designer Accent Walls'
-  },
-  {
-    id: 'wooden-polish',
-    icon: 'fa-solid fa-chair',
-    title: 'Wooden Polish',
-    description: 'Melamyne, PU polish, and natural French wax coats that revitalize doors, modular cabinets, wooden railings, and furniture.',
-    actionText: 'Gloss & Matt Finishes'
-  },
-  {
-    id: 'commercial',
-    icon: 'fa-solid fa-building',
-    title: 'Commercial Painting',
-    description: 'Efficient painting solutions for offices, showrooms, schools, hospitals, and co-working hubs with night-shift execution options.',
-    actionText: 'Minimal Downtime'
-  },
-  {
-    id: 'putty-primer',
-    icon: 'fa-solid fa-trowel',
-    title: 'Wall Putty & Primer',
-    description: 'Two-coat white cement putty base with machine sanding to eliminate minor wall undulations and optimize paint adhesion.',
-    actionText: 'Ultra-smooth Base'
-  }
-];
+// export const SERVICES_DATA: ServiceItem[] = [
+//   {
+//     id: 'interior',
+//     icon: 'fa-solid fa-brush',
+//     title: 'Interior Painting',
+//     description: 'Royale luxury emulsions, velvet touches, and stain-resistant finishes with complete floor masking and post-cleaning.',
+//     actionText: 'Free Color Consultation'
+//   },
+//   {
+//     id: 'exterior',
+//     icon: 'fa-solid fa-house-chimney-window',
+//     title: 'Exterior Painting',
+//     description: 'Weather-shield coatings, anti-fungal silicon primers, and dust-resistant wall paints providing 5-10 year UV protection.',
+//     actionText: 'Monsoon Protection'
+//   },
+//   {
+//     id: 'waterproofing',
+//     icon: 'fa-solid fa-droplet-slash',
+//     title: 'Waterproofing',
+//     description: 'Comprehensive terrace, bathroom, seepage, and parapet wall waterproofing using Dr. Fixit & SmartCare polymer systems.',
+//     actionText: 'Seepage Free Warranty'
+//   },
+//   {
+//     id: 'false-ceiling',
+//     icon: 'fa-solid fa-border-top-left',
+//     title: 'False Ceiling Painting',
+//     description: 'Joint taping, gypsum putty leveling, and ultra-matte ceiling paints that eliminate harsh glare and highlight cove lighting.',
+//     actionText: 'Seamless Finish'
+//   },
+//   {
+//     id: 'texture',
+//     icon: 'fa-solid fa-layer-group',
+//     title: 'Texture Painting',
+//     description: 'Custom metallic stencils, rustic stucco, combed effects, marble finish, and feature wall designs curated for living spaces.',
+//     actionText: 'Designer Accent Walls'
+//   },
+//   {
+//     id: 'wooden-polish',
+//     icon: 'fa-solid fa-chair',
+//     title: 'Wooden Polish',
+//     description: 'Melamyne, PU polish, and natural French wax coats that revitalize doors, modular cabinets, wooden railings, and furniture.',
+//     actionText: 'Gloss & Matt Finishes'
+//   },
+//   {
+//     id: 'commercial',
+//     icon: 'fa-solid fa-building',
+//     title: 'Commercial Painting',
+//     description: 'Efficient painting solutions for offices, showrooms, schools, hospitals, and co-working hubs with night-shift execution options.',
+//     actionText: 'Minimal Downtime'
+//   },
+//   {
+//     id: 'putty-primer',
+//     icon: 'fa-solid fa-trowel',
+//     title: 'Wall Putty & Primer',
+//     description: 'Two-coat white cement putty base with machine sanding to eliminate minor wall undulations and optimize paint adhesion.',
+//     actionText: 'Ultra-smooth Base'
+//   }
+// ];
 
 // export const PROJECTS_DATA: ProjectItem[] = [
 //   {
@@ -119,6 +119,315 @@ export const SERVICES_DATA: ServiceItem[] = [
   
 // ];
 
+
+
+export const SERVICES_DATA: ServiceItem[] = [
+  {
+    id: 'interior',
+    icon: 'fa-solid fa-brush',
+    title: 'Interior Painting',
+    description:
+      'Professional interior painting with premium finishes and clean surface preparation.',
+    actionText: 'Free Color Consultation',
+bgColor: 'bg-orange-50',
+    image: 'https://images.unsplash.com/photo-1770677350521-d5fdcbd74367?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGludGVyaW9yJTIwcGFpbnRpbmd8ZW58MHx8MHx8fDA%3D',
+
+    detailedDescription:
+      'Our interior painting service is designed to give your home a fresh, premium and long-lasting finish. We handle surface preparation, crack filling, putty, primer and final paint application with attention to detail. Our team provides professional painting solutions for bedrooms, living rooms, kitchens, hallways and complete homes.',
+
+    benefits: [
+      'Premium quality interior paints',
+      'Complete wall surface preparation',
+      'Putty and primer application',
+      'Smooth and uniform finish',
+      'Furniture and floor protection',
+      'Professional post-painting cleanup'
+    ],
+
+    areas: [
+      'Kharadi',
+      'Hadapsar',
+      'Viman Nagar',
+      'Mundhwa',
+      'Wagholi',
+      'Magarpatta',
+      'Keshav Nagar',
+      'Pune'
+    ]
+  },
+
+  {
+    id: 'exterior',
+    icon: 'fa-solid fa-house-chimney-window',
+    title: 'Exterior Painting',
+    description:
+      'Weather-resistant exterior painting solutions for houses, apartments and commercial properties.',
+    actionText: 'Monsoon Protection',
+
+    image: 'https://www.stonelam.com/wp-content/uploads/2024/03/14.jpg',
+bgColor: 'bg-sky-50',
+    detailedDescription:
+      'Our exterior painting service provides durable protection against sunlight, rain, dust and changing weather conditions. We carefully prepare exterior walls before applying primer and weather-resistant exterior coatings for a clean and long-lasting finish.',
+
+    benefits: [
+      'Weather-resistant exterior paints',
+      'Surface cleaning and preparation',
+      'Crack and minor damage treatment',
+      'Primer application',
+      'UV and rain protection',
+      'Professional finishing'
+    ],
+
+    areas: [
+      'Pune',
+      'Kharadi',
+      'Hadapsar',
+      'Viman Nagar',
+      'Lohegaon',
+      'Wagholi'
+    ]
+  },
+
+  {
+    id: 'waterproofing',
+    icon: 'fa-solid fa-droplet-slash',
+    title: 'Waterproofing',
+    description:
+      'Professional waterproofing solutions for terraces, bathrooms, walls and seepage problems.',
+    actionText: 'Seepage Free Warranty',
+
+    image: 'https://5.imimg.com/data5/SELLER/Default/2022/1/VT/TK/JG/134008477/waterproofing-chemicals-service.png',
+
+    detailedDescription:
+      'Our waterproofing service helps protect your property from water leakage, seepage and moisture-related damage. We inspect the affected area, identify the source of water penetration and recommend the appropriate waterproofing treatment.',
+
+    benefits: [
+      'Terrace waterproofing',
+      'Bathroom waterproofing',
+      'Wall seepage treatment',
+      'Crack treatment',
+      'Moisture protection',
+      'Professional application'
+    ],
+
+    areas: [
+      'Pune',
+      'Kharadi',
+      'Hadapsar',
+      'Mundhwa',
+      'Viman Nagar'
+    ]
+  },
+
+   {
+    id: 'false-ceiling',
+    icon: 'fa-solid fa-border-top-left',
+    title: 'False Ceiling Painting',
+    description:
+      'Joint taping, gypsum putty leveling, and ultra-matte ceiling paints that eliminate harsh glare and highlight cove lighting..',
+    actionText: ' Seamless Finish',
+
+    image: 'https://i.pinimg.com/1200x/9a/89/f3/9a89f33fa6b7b176474c3e72b1a2d1d6.jpg',
+
+    detailedDescription:
+    'Our false ceiling painting service provides a smooth, clean and premium finish for gypsum, POP and other false ceiling surfaces. We carefully prepare the surface with joint taping, putty leveling and sanding before applying high-quality ceiling paint. Our finishing process helps hide imperfections, reduce harsh glare and enhance the overall look of cove lighting and modern interiors.',
+
+    benefits: [
+       'Smooth and seamless finish',
+    'Gypsum and POP ceiling painting',
+    'Joint taping and crack treatment',
+    'Putty leveling and surface preparation',
+    'Ultra-matte ceiling paint finish',
+    'Enhances cove and decorative lighting',
+    'Professional and clean application'
+    ],
+
+    areas: [
+      'Pune',
+      'Kharadi',
+      'Hadapsar',
+      'Mundhwa',
+      'Viman Nagar'
+    ]
+  },
+
+
+   {
+    id: 'texture',
+    icon: 'fa-solid fa-layer-group',
+    title: 'Texture Painting',
+    description:
+    'Custom metallic stencils, rustic stucco, combed effects, marble finish, and feature wall designs curated for living spaces.',
+    actionText: 'Premium Finish',
+
+    image: 'https://rukminim2.flixcart.com/image/480/480/xif0q/wall-paint/x/d/y/1485-5-rustic-r101-wall-texture-paint-premium-decorative-finish-original-imahhatetghpgtb2.jpeg?q=90',
+
+    detailedDescription:
+    'Our texture painting service adds depth, character and a premium look to your walls. We offer a wide range of decorative finishes including metallic textures, rustic stucco, combed effects, marble finishes, stencil designs and customized feature walls for homes and commercial spaces.',
+
+    benefits: [
+        'Custom texture designs',
+    'Metallic and marble finishes',
+    'Rustic stucco effects',
+    'Combed texture designs',
+    'Feature wall designs',
+    'Professional application'
+    ],
+
+    areas: [
+      'Pune',
+      'Kharadi',
+      'Hadapsar',
+      'Mundhwa',
+      'Viman Nagar'
+    ]
+  },
+
+
+  {
+    id: 'wooden-polish',
+    icon: 'fa-solid fa-chair',
+    title: 'Wooden Polish',
+    description:
+      'Professional wooden polishing and refinishing services to restore the natural beauty, shine and finish of doors, furniture and wooden surfaces.',
+    actionText: 'Seepage Free Warranty',
+
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncBVmz3sqgqFQL9E7UMvz10Vpk-Zduhq31cQT1yAmcyFJ6HWt7ccmQ8U&s=10',
+
+    detailedDescription:
+      'Our wooden polishing service restores and enhances the natural beauty of wooden doors, furniture, cabinets and other wooden surfaces. We carefully prepare the surface, repair minor imperfections and apply high-quality polish or finish for a smooth, durable and elegant appearance.',
+
+    benefits: [
+        'Door and furniture polishing',
+    'Wood surface restoration',
+    'Natural wood finish',
+    'Melamine and PU polish',
+    'Scratch and surface correction',
+    'Smooth and durable finish'
+    ],
+
+    areas: [
+      'Pune',
+      'Kharadi',
+      'Hadapsar',
+      'Mundhwa',
+      'Viman Nagar'
+    ]
+  },
+
+     {
+    id: 'waterproofing',
+      bgColor: 'bg-blue-50',
+
+    icon: 'fa-solid fa-droplet-slash',
+    title: 'Waterproofing',
+    description:
+      'Professional waterproofing solutions for terraces, bathrooms, walls and seepage problems.',
+    actionText: 'Seepage Free Warranty',
+
+    image: 'https://www.deccanclap.com/uploads/services/waterproofing-services.jpg',
+
+    detailedDescription:
+      'Our waterproofing service helps protect your property from water leakage, seepage and moisture-related damage. We inspect the affected area, identify the source of water penetration and recommend the appropriate waterproofing treatment.',
+
+    benefits: [
+      'Terrace waterproofing',
+      'Bathroom waterproofing',
+      'Wall seepage treatment',
+      'Crack treatment',
+      'Moisture protection',
+      'Professional application'
+    ],
+
+    areas: [
+      'Pune',
+      'Kharadi',
+      'Hadapsar',
+      'Mundhwa',
+      'Viman Nagar'
+    ]
+  },
+
+
+{
+  id: 'commercial',
+  icon: 'fa-solid fa-building',
+  title: 'Commercial Painting',
+
+  description:
+    'Efficient painting solutions for offices, showrooms, schools, hospitals and co-working spaces with flexible execution options.',
+
+  actionText: 'Minimal Downtime',
+
+  image: 'https://5.imimg.com/data5/SELLER/Default/2026/6/614160051/HZ/TI/FY/269680622/commercial-painting-services-500x500.png',
+
+  detailedDescription:
+    'Our commercial painting service is designed for offices, showrooms, schools, hospitals, co-working spaces and other commercial properties. We focus on proper surface preparation, professional application and efficient execution to minimize disruption to your daily operations.',
+
+  benefits: [
+    'Office and showroom painting',
+    'School and hospital painting',
+    'Commercial exterior painting',
+    'Flexible work scheduling',
+    'Minimal business disruption',
+    'Professional surface preparation'
+  ],
+
+  areas: [
+    'Pune',
+    'Kharadi',
+    'Hadapsar',
+    'Mundhwa',
+    'Viman Nagar',
+    'Solapur'
+  ]
+},
+// {
+//   id: 'putty-primer',
+//   icon: 'fa-solid fa-trowel',
+//   title: 'Wall Putty & Primer',
+
+//   description:
+//     'Professional wall putty and primer application to create a smooth, even surface and improve paint adhesion and durability.',
+
+//   actionText: 'Ultra-smooth Base',
+
+//   image: '/images/services/wall-putty-primer.jpg',
+
+//   detailedDescription:
+//     'Our wall putty and primer service prepares your walls for a smooth and long-lasting paint finish. We apply quality wall putty to correct minor surface imperfections and use suitable primer to improve paint adhesion, coverage and overall durability.',
+
+//   benefits: [
+//     'Wall surface leveling',
+//     'Minor crack and unevenness correction',
+//     'Smooth wall preparation',
+//     'Quality primer application',
+//     'Improved paint adhesion',
+//     'Better paint durability'
+//   ],
+
+//   areas: [
+//     'Pune',
+//     'Kharadi',
+//     'Hadapsar',
+//     'Mundhwa',
+//     'Viman Nagar',
+//     'Solapur'
+//   ]
+// },
+
+
+
+
+
+
+
+
+
+
+
+
+];
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
@@ -320,3 +629,5 @@ export const QA_PAIRS: QaPair[] = [
     reply: "Yes, we handle both residential interior and exterior weatherproof painting for apartments, bungalows, and commercial buildings."
   }
 ];
+export type { ServiceItem };
+
