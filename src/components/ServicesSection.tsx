@@ -1159,8 +1159,34 @@ export const ServicesSection: React.FC = () => {
   />
 </div>
 
+
+
+ {/* VIEW MORE INDICATOR */}
+
+  <div className="relative -mt-8 flex justify-center">
+  <a
+    href="#service-details"
+    className="
+      z-10
+      flex
+      cursor-pointer
+      items-center
+      gap-2
+      px-5
+      py-2
+      text-sm
+      font-bold
+      text-brand-orange
+      drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]
+    "
+  >
+    <span>View More</span>
+    <i className="fa-solid fa-chevron-down animate-bounce text-xs"></i>
+  </a>
+</div>
+
             {/* Modal Content */}
-            <div className="p-6 sm:p-8">
+            <div className="p-6 sm:p-8" id="service-details">
 
               {/* Service Icon */}
               <div className="mb-4 flex items-center gap-3">
